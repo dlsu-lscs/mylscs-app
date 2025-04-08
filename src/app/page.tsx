@@ -2,6 +2,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { UserIcon } from '@heroicons/react/24/outline'
 import { Separator } from '@/components/ui/separator'
+import LinksCard from './components/linkCard'
 
 export default function Home() {
   const currentDate = new Date()
@@ -58,6 +59,11 @@ export default function Home() {
             <Separator className="bg-white" />
             <div className="my-10">
               <h1 className="font-bold text-4xl">Quickstart</h1>
+              <div className="my-12 flex flex-wrap space-x-12 space-y-8">
+                <LinksCard></LinksCard>
+                <LinksCard></LinksCard>
+                <LinksCard></LinksCard>
+              </div>
             </div>
           </div>
           <div className="border-2 border-white bg-black w-1/2 rounded-md p-8 translate-y-16 h-screen">
