@@ -1,11 +1,13 @@
+"use client";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { UserIcon } from "@heroicons/react/24/outline";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
     <>
-      <div className="w-screen h-screen flex py-40 px-44">
-        <div className="flex flex-col">
+      <div className="w-screen h-screen flex flex-col py-40 px-44">
+        <div className="flex flex-col my-6">
           <h1 className="font-bold text-3xl my-4">Profile</h1>
           <div className="flex space-x-4">
             <Avatar className="w-28 h-28">
@@ -16,7 +18,7 @@ export default function Home() {
               <div className="flex space-x-3">
                 <h1 className="text-3xl font-bold">Sean Denzel Robenta</h1>
                 <div className="flex">
-                  <div className="flex items-center bg-pink-700 text-black font-bold text-sm py-0.5 px-2">
+                  <div className="flex items-center bg-pink-700 text-black font-bold text-sm px-1.5">
                     123
                   </div>
                 </div>
@@ -43,6 +45,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Separator className="bg-[#1D283A]" />
       </div>
     </>
   );
