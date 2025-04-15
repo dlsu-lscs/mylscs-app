@@ -1,17 +1,17 @@
-'use client'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { UserIcon } from '@heroicons/react/24/outline'
-import { Separator } from '@/components/ui/separator'
-import LinksCard from './components/linkCard'
+"use client";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { UserIcon } from "@heroicons/react/24/outline";
+import { Separator } from "@/components/ui/separator";
+import LinksCard from "../features/linkCard/linkCard";
 
 export default function Home() {
-  const currentDate = new Date()
+  const currentDate = new Date();
   const options: Intl.DateTimeFormatOptions = {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  }
-  const formattedDate = currentDate.toLocaleDateString('en-US', options)
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  const formattedDate = currentDate.toLocaleDateString("en-US", options);
 
   return (
     <>
@@ -37,7 +37,7 @@ export default function Home() {
                   <div className="flex items-center">
                     <UserIcon className="w-6 h-6"></UserIcon>
                     <p>
-                      <span className="font-bold">Vice President</span>{' '}
+                      <span className="font-bold">Vice President</span>{" "}
                       <span className="opacity-50">
                         Research and Development
                       </span>
@@ -75,5 +75,5 @@ export default function Home() {
         </div>
       </div>
     </>
-  )
+  );
 }
